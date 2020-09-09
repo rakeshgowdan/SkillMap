@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+<title>Register</title>
+<style>
+body{
+font-family: 'Alata';
+font-size: 22px;
+text-transform: uppercase;
+}
+form{
+padding:20px;
+margin:20px;
+border:8px  solid grey;
+}
+h4 {
+	text-align: center;
+}
+h5{
+text-align: center;
+
+}
+input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+input:focus {
+  border: 3px solid #555;
+}
+ input[type=Submit] {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+input[type=reset]{
+background-color: red;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+	<h4>Fill up the form for registration</h4>
+	<form action="RegisterEmployee" method="get">
+		<h5>Personal Details</h5>
+		<br>emailid: <input type="text" name="mail" required> <br>
+		<br>First Name: <input type="text" name="fname" required><br>
+		<br> Last Name: <input type="text" name="lname" required> <br>
+		<br> Mobile No: <input type="text" name="mobile" required> <br>
+		<br>password: <input type="text" name="pass" required> <br>
+		
+		<hr>
+		<h5>Education & Expirence</h5>
+		<br>Highest Qualification :: <input type="text" name="qual" required> <br>
+		<br>Current Role :: <input type="text" name="crole" > <br>
+		<br>Total Expirence :: <input type="text" name="texp"> <br>
+		<br>Current Company <input type="text" name="cc"> <br>
+		<br>Education X <input type="text" name="ex" required> <br>
+		<br>Education XI <input type="text" name="exi" required> <br>
+		<br>Education Degree <input type="text" name="ed" required> <br>
+		<br> Skills :: <input type="text" name="skill" required> <br>
+		
+		<br> <input type="Submit" value="Submit">
+		 <input type="reset" value="Cancel">
+
+	</form>
+</body>
+</html>
